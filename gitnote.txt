@@ -1,0 +1,14 @@
+git commit -a:  commit not-add files and added files
+
+git branch -d newbranch:  after merge,the branch merged with master can be deleted
+
+git branch -D newbranch:  delete a branch mandatorily
+
+git reset --hard HEAD: cancel a merge
+git reset --hard ORG_HEAD:  cancel a merge if the merged code has been committed
+
+git log -p:   show patchs
+git log --stat:  show modefied files and the content size of added or deleted
+git log --pretty=oneline:  output log in format
+
+git log  --pretty=format:'%h : %s'  --graph
