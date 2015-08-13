@@ -10,5 +10,29 @@ git reset --hard ORG_HEAD:  cancel a merge if the merged code has been committed
 git log -p:   show patchs
 git log --stat:  show modefied files and the content size of added or deleted
 git log --pretty=oneline:  output log in format
+git log --pretty=raw: detail includes tree,parent,author,committer
 
 git log  --pretty=format:'%h : %s'  --graph
+
+git diff:  show difference between current work directory and unstaged files
+git diff --cached: show difference between current work directory and staged files
+git diff --HEAD:show all difference
+
+git diff branchnamae: show difference between current branch and another branch
+git diff --stat:
+
+$git checkout mywork
+$git rebase origin:  cancel all commits in mywork and save as patch in .git/rebase temporatory,then update mywork to latest origin version,
+and apply the patches to mywork
+
+git rebase --continue: after solve the conflict, execute git-add then git rebase --continue
+git rebase --abort:return the status before rebase
+
+git stash: save local to stash,and revert to last version
+git stash apply: return back last work status
+git stash list: show stash list
+git stash clear: clear the stash list
+
+git show: show blob\tree
+
+git ls-tree: show mode,type,SHA1 value,name
