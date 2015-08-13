@@ -27,6 +27,7 @@ and apply the patches to mywork
 
 git rebase --continue: after solve the conflict, execute git-add then git rebase --continue
 git rebase --abort:return the status before rebase
+git rebase --i:
 
 git stash: save local to stash,and revert to last version
 git stash apply: return back last work status
